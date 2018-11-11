@@ -1,1 +1,1 @@
-# October_test
+# October test: Python, SQL CTE, etc

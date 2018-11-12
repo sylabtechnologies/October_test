@@ -21,5 +21,5 @@ def get_page(url, log):
 
 lkd = "https://www.linkedin.com/jobs/matlab-jobs"
 
-std_log(myurl)
-print(get_page(myurl, std_log))
+std_log(lkd + ":")
+print(get_page(lkd, std_log))

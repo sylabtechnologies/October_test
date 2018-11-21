@@ -9,6 +9,12 @@ class Points(object):
         self.y = y
         self.z = z
 
+    def __add__(self, no):
+        addx = self.x + no.x
+        addy = self.y + no.y
+        addz = self.z + no.z
+        return Points(addx, addy, addz)
+
     def __sub__(self, no):
         subx = self.x - no.x
         suby = self.y - no.y

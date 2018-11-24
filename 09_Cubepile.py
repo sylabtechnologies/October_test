@@ -1,5 +1,5 @@
 # PY2
-# https://www.hackerrank.com/challenges/piling-up/problemimport collections
+# https://www.hackerrank.com/challenges/piling-up/problem
 
 import collections
 import sys

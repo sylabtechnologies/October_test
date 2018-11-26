@@ -40,7 +40,7 @@ private:
 	int GCD(int, int b);
 	void normalize()
 	{
-		if (_denom == 0) throw std::runtime_error("null denominator!");
+		if (_denom == 0) throw std::out_of_range("null denominator!");
 		if (_denom < 0) { _denom = -_denom; _num = -_num; }
 		int n = GCD(_num, _denom);
 		if (n > 1) { _num /= n; _denom /= n; }

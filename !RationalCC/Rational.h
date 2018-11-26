@@ -20,8 +20,8 @@ private:
 
 public:
 	Rational(int n, int d) : _num(n), _denom(d) { normalize(); }
-	Rational() : _num(0), _denom(1) {}
 	Rational(int n) : _num(n), _denom(1) {}
+	Rational() : _num(0), _denom(1) {}
 	const int numerator() const { return _num; }
 	const int denominator() const { return _denom; }
 
@@ -30,8 +30,7 @@ public:
 	const int toInt() const {	return _num/_denom; }
 	const double toDouble() const { return double(_num)/_denom; }
 
-	// implement unary minus
-	Rational operator-()		
+	Rational operator-()		// implement unary minus
 	{
 		_num = - _num;
 		return *this;
@@ -54,5 +53,7 @@ Rational operator*(const Rational&, const Rational&);
 Rational operator/(const Rational&, const Rational&);
 bool operator==(const Rational&, const Rational&);
 bool operator!=(const Rational&, const Rational&);
+bool operator>(const Rational&, const Rational&);
+bool operator<(const Rational&, const Rational&);
 std::istream& operator>>(std::istream&, Rational&);
 std::ostream& operator<<(std::ostream&, const Rational&);

@@ -1,6 +1,5 @@
 // Nov-26-Y18: implement rational numbers
 // 1. make mostly inline functions
-// 1.1. why Bernie makes them two two see Primer4
 // 2. set getters as numerator(), denominator(), toString(), toInt(), toDouble()
 // 3. implement arithmetic etc as non-member functions for conversions
 // 4. use Euclid algorithm for GCD (improve w/ binary GCD?)

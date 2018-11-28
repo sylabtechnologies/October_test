@@ -19,7 +19,7 @@ private:
 	int _denom;
 
 public:
-	Rational(int n, int d) : _num(n), _denom(d) { if _denom != 1 normalize(); }
+	Rational(int n, int d = 1) : _num(n), _denom(d) { if _denom != 1 normalize(); }
 	Rational() : _num(0), _denom(1) {}
 	const int numerator() const { return _num; }
 	const int denominator() const { return _denom; }

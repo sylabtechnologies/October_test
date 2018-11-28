@@ -19,8 +19,7 @@ private:
 	int _denom;
 
 public:
-	Rational(int n, int d) : _num(n), _denom(d) { normalize(); }
-	Rational(int n) : _num(n), _denom(1) {}
+	Rational(int n, int d) : _num(n), _denom(d) { if _denom != 1 normalize(); }
 	Rational() : _num(0), _denom(1) {}
 	const int numerator() const { return _num; }
 	const int denominator() const { return _denom; }
@@ -30,10 +29,9 @@ public:
 	const int toInt() const {	return _num/_denom; }
 	const double toDouble() const { return double(_num)/_denom; }
 
-	Rational operator-()		// implement unary minus
+	const Rational operator-() const		// implement unary minus
 	{
-		_num = - _num;
-		return *this;
+		return Rational(-_num, _denom);
 	}
 
 private:

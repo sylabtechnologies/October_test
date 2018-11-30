@@ -1,10 +1,9 @@
-// Nov-26-Y18: implement rational numbers
-// 1. make mostly inline functions
-// 2. set getters as numerator(), denominator(), toString(), toInt(), toDouble()
-// 3. implement arithmetic etc as non-member functions for conversions
-// 4. use Euclid algorithm for GCD (improve w/ binary GCD?)
-// therefore keep denominator minimal & positive
-// 5. use synthesized copy constructor, destructor, assigment operator
+// Nov-19-Y18: implement rational numbers
+// 1. inline
+// 2. getters = as numerator(), denominator(), toString(), toInt(), toDouble()
+// 3. arithmetic = textbook non-member
+// 4. use Euclid GCD (binary GCD?), keep denominator = min/positive
+// 5. use synthesized cctor, dtor, =tor
 
 #pragma once
 #include <iostream>
